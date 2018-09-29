@@ -12,11 +12,6 @@ class Backer
     binding.pry
     self.backed_projects << project 
     project.backers << self
-    end 
   end 
-  
-  #def backed_projects
-  #  self.backed_projects 
- # end 
   
 end 
