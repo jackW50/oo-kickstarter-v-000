@@ -8,11 +8,9 @@ class Project
     @backers = []  
   end 
   
- # def add_backer(backer)
-   # self.backers << backer
-    #if backer.backed_projects.none? {|proj| proj == self}
-   #   backer.backed_projects << self
-   # end 
- # end 
+  def add_backer(backer)
+   self.backers << backer
+   backer.backed_projects << self
+  end 
   
 end 
