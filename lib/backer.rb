@@ -11,8 +11,7 @@ class Backer
   def back_project(project)
     binding.pry
     self.backed_projects << project 
-    if project.backers.none? {|backers| backers == self}
-      project.backers << self
+    project.backers << self
     end 
   end 
   
